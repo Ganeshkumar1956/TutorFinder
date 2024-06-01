@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            background-color: aliceblue;
+            margin: 70px auto 30px;
+            border-radius: 30px;
+            max-width: 400px;
+            box-shadow: 0 6px 10px black;
+        }
+        .container form {
+            text-align: center;
+        }
+        .container input[type="text"],
+        .container input[type="password"],
+        .container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .container button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .register-link a {
+            color: blue;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 70px 20px 30px;
+            }
+        }
+    </style>
+    <title>HOTEL MANAGEMENT</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <h1 style="text-align: center;">LOGIN</h1>
+    <div class="container">
+        <form onsubmit="validateForm(event)">
+            <br><br>
+            <label style="font-weight: bold;">Username :</label>
+            <br><br>
+            <input type="text" name="username" id="username" placeholder="Enter Username" required>
+            <br><br>
+            <label style="font-weight: bold;">PASSWORD :</label>
+            <br><br>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <br><br>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>

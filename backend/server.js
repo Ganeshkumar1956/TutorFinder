@@ -12,9 +12,9 @@ const sessionStore=new pgstore({
 })
 
 app.set('view engine','ejs');
-app.set('views','../frondend');
+app.set('views','../frontend');
 app.use(cors());
-app.use(express.static('../frondend'))
+app.use(express.static('../frontend'))
 app.use(body_parser.json());
 app.use(session({
     secret: process.env.SECRET_KEY,
